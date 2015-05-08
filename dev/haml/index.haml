@@ -1,0 +1,23 @@
+!!!
+/[if IE 9] <html class="ie9" lang="en">
+<!--[if gt IE 9]><!-->
+%html{:lang => "en"}<>
+	<!--<![endif]-->
+
+	= Haml::Engine.new(File.read("dev/haml/partials/_doc_head.haml")).render
+
+	%body
+
+		%main{:role => "main"}
+
+			%section.label
+
+				%article
+
+					%h1 Farnley Bros Inc.
+					%h2 Attn: Brick P. Farnley
+					%h3 1233 Somerset Street West
+					%h4 Ottawa ON  K2P 0J6
+					%h5 Canada
+
+		-# = Haml::Engine.new(File.read("dev/haml/partials/_doc_scripts.haml")).render

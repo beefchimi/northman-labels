@@ -1,0 +1,49 @@
+// ==|== media queries ========================================================
+// WIDTHS: 568px / 768px / 980px
+// ============================================================================
+
+/*
+@media only screen and (min-width: 768px) {
+
+}
+*/
+
+/*
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { // IE10 & IE11
+}
+*/
+
+@media print {
+
+	*,
+	*:before,
+	*:after {
+		background: transparent !important;
+	}
+	html {
+		min-height: 0;
+	}
+	body {
+		height: auto;
+	}
+	main {
+		position: static;
+		margin: 0;
+		width: 2.625in;
+		height: 1in;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
+		font-size: 9pt;
+	}
+	h1,
+	h2,
+	h3,
+	h4 {
+		margin-bottom: 2pt;
+	}
+
+}
